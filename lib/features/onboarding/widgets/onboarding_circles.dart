@@ -158,42 +158,42 @@ class Square extends StatelessWidget {
 }
 
 // Text widget
-Container textWidget() {
+Container textWidget({double? topTextFontSize, double? bottomTextFontSize, double? marginTop}) {
   return Container(
     padding: const EdgeInsets.symmetric(horizontal: 35),
     child: Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SizedBox(height: 630),
+        SizedBox(height: marginTop),
         // Bold text
         Text(
           'Taking care of yourself is easy',
           style: GoogleFonts.sora(
-            fontSize: 45,
+            fontSize: topTextFontSize,
             fontWeight: FontWeight.w600,
             color: AppColors.primaryText,
           ),
         ),
         const SizedBox(height: 10),
         // sub text
-        const Padding(
-          padding: EdgeInsets.only(right: 10),
+        Padding(
+          padding: const EdgeInsets.only(right: 10),
           child: AppText(
             'Any treatment begins with the consultation of a qualified specialist',
             fontWeight: FontWeight.w400,
-            fontSize: 18,
+            fontSize: bottomTextFontSize,
             spacebetweentext: 1.8,
           ),
         ),
         const SizedBox(height: 25),
         // Get started button
-        const AppText('Get started', fontWeight: FontWeight.bold, fontSize: 20),
+        const AppText('Get started', fontWeight: FontWeight.bold, fontSize: 17),
         const SizedBox(height: 10),
         _line(height: 3, width: 90)
       ],
     ),
   );
-  
+
 }
 
 Container _line({

@@ -24,7 +24,7 @@ class AppText extends StatelessWidget {
       text,
       style: GoogleFonts.sora(
         height: spacebetweentext,
-        fontSize: 16,
+        fontSize: fontSize,
         fontWeight: fontWeight,
         color: color,
       ),

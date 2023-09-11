@@ -13,4 +13,6 @@ class AppColors {
   static const Color basicWhite = Colors.white;
   // primaryText
   static const Color primaryText = Color.fromARGB(255, 247,247,248);
+  // SecondaryText
+  static const Color secondaryText = Color.fromARGB(255, 150,172,180);
 }

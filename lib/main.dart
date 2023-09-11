@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:health_assitance_ui/features/onboarding/view/onboarding.dart';
 
 void main() {
@@ -10,9 +11,12 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Onboarding(),
-      debugShowCheckedModeBanner: false,
+    return const ScreenUtilInit(
+      designSize:  Size(375, 812),
+      child:  MaterialApp(
+        home: Onboarding(),
+        debugShowCheckedModeBanner: false,
+      ),
     );
   }
 }
