@@ -23,7 +23,7 @@ class Onboarding extends StatelessWidget {
       backgroundColor: AppColors.primaryBackground,
       body: GestureDetector(
         onTap: () {
-          Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => Home(),));
+          Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => const Home(),));
         },
         child: Stack(
           children: [
