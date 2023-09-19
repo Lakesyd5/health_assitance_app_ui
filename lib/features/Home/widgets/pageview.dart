@@ -13,7 +13,7 @@ Widget pageView() {
         speciality: specialties[index].specialityName,
         doctors: specialties[index].doctorsAvailable,
       ),
-      separatorBuilder: (context, index) => const SizedBox(width: 12),
+      separatorBuilder: (context, index) => const SizedBox(width: 15),
       itemCount: specialties.length,
     ),
   );

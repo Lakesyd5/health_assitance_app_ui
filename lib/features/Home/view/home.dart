@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:health_assitance_ui/commons/utils/app_colors.dart';
 import 'package:health_assitance_ui/commons/widgets/app_search.dart';
 import 'package:health_assitance_ui/commons/widgets/text_widgets.dart';
+import 'package:health_assitance_ui/features/Home/widgets/hospital_tile.dart';
 import 'package:health_assitance_ui/features/Home/widgets/pageview.dart';
 import 'package:health_assitance_ui/features/Home/widgets/top_text.dart';
 
@@ -75,12 +76,13 @@ class Home extends StatelessWidget {
                     padding: const EdgeInsets.only(left: 30),
                     child: pageView(),
                   ),
-                  const SizedBox(height: 30),
+                  const SizedBox(height: 40),
                   Container(
                     padding: const EdgeInsets.symmetric(horizontal: 30),
                     child: const Column(
                       children: [
-                        AppText('Hospital near you', fontWeight: FontWeight.w600, color: AppColors.secondaryText,)
+                        AppText('Hospital near you', fontWeight: FontWeight.w600, color: AppColors.secondaryText,),
+                        Expanded(child: HospitalList())
                       ],
                     ), 
                   )
