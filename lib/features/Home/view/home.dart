@@ -64,20 +64,29 @@ class Home extends StatelessWidget {
                   topRight: Radius.circular(45),
                 ),
               ),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 30),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    topSection(),
-                    const SizedBox(height: 20),
-                    pageView(),
-                    const SizedBox(height: 20),
-                    const AppText('Hospital near you', fontWeight: FontWeight.w600, color: AppColors.secondaryText,),
-                    const SizedBox(height: 20),
-                    const Expanded(child: HospitalList())
-                  ],
-                ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 30),
+                      child: topSection()),
+                  const SizedBox(height: 20),
+                  Padding(
+                    padding: EdgeInsets.only(left: 30),
+                    child: pageView(),
+                  ),
+                  const SizedBox(height: 20),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 30),
+                    child: const AppText(
+                      'Hospital near you',
+                      fontWeight: FontWeight.w600,
+                      color: AppColors.secondaryText,
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  const Expanded(child: HospitalList())
+                ],
               ),
             ),
           )

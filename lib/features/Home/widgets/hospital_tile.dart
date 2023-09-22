@@ -10,7 +10,7 @@ class HospitalList extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: hospitals.length,
-      padding: const EdgeInsets.only(top: 0),
+      padding: const EdgeInsets.only(top: 0, left: 30, right: 30),
       itemBuilder: (context, index) {
         final hospital = hospitals[index];
 
