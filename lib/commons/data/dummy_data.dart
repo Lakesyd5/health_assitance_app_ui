@@ -13,21 +13,25 @@ List<Speciality> specialties = [
     color: Colors.orange.shade50,
     specialityName: 'Virusology',
     doctorsAvailable: '4 doctors',
+    iconData: Icons.vaccines_outlined,
   ),
   Speciality(
     color: AppColors.secondaryGreen.withOpacity(0.2),
     specialityName: 'Cardiology',
     doctorsAvailable: '7 doctors',
+    iconData: Icons.battery_4_bar,
   ),
   Speciality(
     color: Colors.purple.shade100,
     specialityName: 'Family medicine',
     doctorsAvailable: '15 doctors',
+    iconData: Icons.medication_rounded
   ),
   Speciality(
     color: Colors.red.shade100,
     specialityName: 'Nevrology',
     doctorsAvailable: '5 doctors',
+    iconData: Icons.adjust_rounded
   ),
 ];
 
@@ -51,6 +55,7 @@ List<Hospital> hospitals = [
       'Nevrology',
     ],
     timeOpen: '9 AM - 6 PM',
+    icon: Icons.emergency_outlined
   ),
   Hospital(
     hospitalName: 'Ruphe Specilist',
@@ -61,5 +66,6 @@ List<Hospital> hospitals = [
       'Nevrology',
     ],
     timeOpen: '9 AM - 6 PM',
+    icon: Icons.route_rounded
   )
 ];

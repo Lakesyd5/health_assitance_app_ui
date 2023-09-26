@@ -12,6 +12,7 @@ Widget pageView() {
         color: specialties[index].color,
         speciality: specialties[index].specialityName,
         doctors: specialties[index].doctorsAvailable,
+        iconText: specialties[index].iconData,
       ),
       separatorBuilder: (context, index) => const SizedBox(width: 15),
       itemCount: specialties.length,
@@ -23,7 +24,8 @@ class Page extends StatelessWidget {
   final Color? color;
   final String? speciality;
   final String? doctors;
-  const Page({super.key, this.color, this.speciality, this.doctors});
+  final IconData? iconText;
+  const Page({super.key, this.color, this.speciality, this.doctors, this.iconText});
 
   @override
   Widget build(BuildContext context) {
@@ -42,8 +44,8 @@ class Page extends StatelessWidget {
               borderRadius: BorderRadius.circular(11),
               color: Colors.white,
             ),
-            child: const Icon(
-              Icons.tips_and_updates_outlined,
+            child: Icon(
+              iconText ?? Icons.tips_and_updates_outlined,
               size: 23,
               color: AppColors.primaryBackground,
             ),

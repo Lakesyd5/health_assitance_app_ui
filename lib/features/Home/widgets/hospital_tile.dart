@@ -24,8 +24,8 @@ class HospitalList extends StatelessWidget {
               color: AppColors.primaryBackground,
               borderRadius: BorderRadius.circular(15),
             ),
-            child: const Icon(
-              Icons.emergency_rounded,
+            child: Icon(
+              hospital.icon ?? Icons.emergency_rounded,
               size: 38,
               color: AppColors.basicWhite,
             ),

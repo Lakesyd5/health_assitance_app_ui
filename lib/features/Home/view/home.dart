@@ -68,17 +68,17 @@ class Home extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Padding(
-                      padding: EdgeInsets.symmetric(horizontal: 30),
+                      padding: const EdgeInsets.symmetric(horizontal: 30),
                       child: topSection()),
                   const SizedBox(height: 20),
                   Padding(
-                    padding: EdgeInsets.only(left: 30),
+                    padding: const EdgeInsets.only(left: 30),
                     child: pageView(),
                   ),
                   const SizedBox(height: 20),
-                  Padding(
+                  const Padding(
                     padding: EdgeInsets.symmetric(horizontal: 30),
-                    child: const AppText(
+                    child: AppText(
                       'Hospital near you',
                       fontWeight: FontWeight.w600,
                       color: AppColors.secondaryText,
